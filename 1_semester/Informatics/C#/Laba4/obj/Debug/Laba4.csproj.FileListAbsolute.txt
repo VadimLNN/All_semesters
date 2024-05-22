@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\bin\Debug\Laba4.exe.config
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\bin\Debug\Laba4.exe
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\bin\Debug\Laba4.pdb
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\obj\Debug\Laba4.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\obj\Debug\Laba4.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\obj\Debug\Laba4.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\obj\Debug\Laba4.exe
+C:\Users\user\Desktop\HEI\Informatics\C#\Laba4\obj\Debug\Laba4.pdb
