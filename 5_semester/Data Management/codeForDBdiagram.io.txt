@@ -1,0 +1,35 @@
+//https://dbdiagram.io/d
+
+Table Users {
+    user_id INTEGER [pk] // Primary Key: Unique ID for each user
+    username VARCHAR(50) [not null] // Username of the user
+    email VARCHAR(100) [not null, unique] // Email address of the user
+    registration_date DATE [not null] // Registration date
+}
+
+Table Genres {
+    genre_id INTEGER [pk] // Primary Key: Unique ID for each genre
+    genre_name VARCHAR(50) [not null, unique] // Name of the genre
+}
+
+Table Games {
+    game_id INTEGER [pk] // Primary Key: Unique ID for each game
+    title VARCHAR(100) [not null] // Title of the game
+    genre_id INTEGER [not null, ref: > Genres.genre_id] // Foreign Key referencing Genres table
+    price REAL [not null] // Price of the game
+    release_date DATE [not null] // Release date of the game
+}
+
+Table Orders {
+    order_id INTEGER [pk] // Primary Key: Unique ID for each order
+    user_id INTEGER [not null, ref: > Users.user_id] // Foreign Key referencing Users table
+    order_date DATE [not null] // Date of the order
+    total_price REAL [not null] // Total price of the order
+}
+
+Table OrderList {
+    orderlist_id INTEGER [pk] // Primary Key: Unique ID for each entry in the order list
+    order_id INTEGER [not null, ref: > Orders.order_id] // Foreign Key referencing Orders table
+    game_id INTEGER [not null, ref: > Games.game_id] // Foreign Key referencing Games table
+    quantity INTEGER [not null] // Quantity of the game in the order
+}
