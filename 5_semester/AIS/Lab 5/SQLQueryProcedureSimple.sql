@@ -1,0 +1,7 @@
+CREATE PROCEDURE ÷ена¬ыше„ем
+@X INTEGER
+AS
+SELECT *
+FROM ћеню
+WHERE
+÷ена>@X
